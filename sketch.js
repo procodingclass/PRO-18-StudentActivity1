@@ -38,8 +38,8 @@ function preload(){
 function setup() {
   createCanvas(600, 200);
 
-  var message = "This is a message";
- console.log(message)
+ // var message = "This is a message";
+ //console.log(message)
   
   trex = createSprite(50,160,20,50);
   trex.addAnimation("running", trex_running);
@@ -91,7 +91,7 @@ function draw() {
     
     ground.velocityX = -(4 + 3* score/100)
     //scoring
-    score = score + Math.round(getFrameRate()/60);
+    score = score + Math.round(frameRate()/60);
     
     if(score>0 && score%100 === 0){
        checkPointSound.play() 
@@ -158,6 +158,20 @@ function draw() {
 }
 
 function reset(){
+  
+  //Change the gameState to PLAY
+  
+  
+  //Change the visiblity to false for Restrat & GameOver
+  
+  
+  //Destroy CloudGroup & ObstacleGroup
+  
+  
+  //Change Animation to Trex Collided
+  
+  
+  //Reset the score
   
 
 }
